@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title> Red Pandas </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Lemonada:wght@500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/styles.css">
+        <link rel="icon" href="assets/media/fav.png">
+    </head>
+    <body  onload ="plusSlides(0)">
+        <header>
+            <a href = #pagetop>
+            <h1>
+                Red Pandas
+            </h1>
+            </a>
+        </header>
+        <div class = sidebar>
+            <div id = contentsbutton onclick="toggleContents()">
+                ☰
+            </div>
+            <div id = workscitedbutton onclick="toggleCited()">
+                <h1>
+                    ❝
+                </h1>
+                <p>
+                    Works <br> Cited
+                </p>
+            </div>
+        </div>
+        <div id = contents>
+            <a href = "#Habitat" onclick="toggleContents()"> Habitat </a>
+            <a href = "#diet" onclick="toggleContents()"> Diet </a>
+            <a href = "#beh" onclick="toggleContents()"> Behavior </a>
+            <a href = "#tri" onclick="toggleContents()"> Trivia </a>
+            <a href = "#con" onclick="toggleContents()"> Conservation </a>
+            <a id = printButton onclick="print()"> Print </a>
+        </div>
+        <img
+            alt = ""
+            id = rpLogo    
+            src = "assets/media/corner.png"
+        >
+        <div id = content>
+            <a id = pagetop></a>
+            <div id = outer_slide>
+                <div id = inner_slide>
+                    <p id = slidenum> </p> 
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+            </div>
+            <div id = introText>
+                <p>The last time you visited the zoo, perhaps you saw a reddish-furred, cat sized animal with a tail like a raccoon and a face like a panda bear?  These adorable creatures are Red Pandas.  Although Red Pandas and Giant Pandas share the name Panda, the two are not actually closely related.  In fact, the Red Panda holds its own classification unique to its two known species. </p>
+            </div>
+            <div class = box >
+                <a id="Habitat">
+                    <img alt = "" src = "assets/media/habitat.jpg">
+                    <h2>
+                        Habitat
+                    </h2>
+                </a>
+                <p>
+                    Red Pandas live in the temperate, rainy, high-altitude forests of Nepal, northern Myanmar, and central China.  They also can be found in some parts of India in tropical rainforests.  Red Pandas prefer "plenty of fallen logs, tree stumps, and fresh water" in their habitat.  They are primarily solitary creatures outside of their mating season.
+                    <br> <br>
+                    Red Pandas spend most of their time in trees, climbing with the help of their claws and bushy tail that assists with balance and blending with the red and white mosses and lichens that grow on tree trunks in the area.  The trees also allow them to sunbathe and escape potential predators such as Snow Leopards.
+                </p>
+            </div>
+            <a class = box id = diet>
+                <img alt = "" src = "assets/media/diet.jpg">
+                <h2>
+                    Diet
+                </h2>
+                <p>
+                    Although physically classified as carnivores, Red Pandas are primarily herbivorous, with a diet that consists of 95% bamboo.  Many people believe that the name “Panda” originated from an old name <em> nigalya ponya </em>, which is thought to mean “Bamboo Footed”.  Unlike the Giant Panda, which eats all the bamboo, Red Pandas eat only the nutritious leaf tips and shoots.
+                    <br> <br>
+                    Red Pandas may also eat insects, insects, grubs, fruits, roots, eggs, acorns, or small mammals and birds.
+                </p>
+            </a>
+            <a class = box id = beh>
+                <img alt = "" src = "assets/media/behavior.jpg">
+                <h2>
+                    Behavior
+                </h2>
+                <p>
+                    Red Pandas are active at dawn, dusk, and at night, when it is cooler.  Primarily solitary outside of mating season, they keep their own territories of about one square mile.  When they must communicate, they do so with subtle sounds such as squeals, twitters, and grunts.  Males patrol their territory in order to scent mark it.  Some common red panda activities include foraging for food and bathing themselves by licking their front paws and using it to clean themself similar to a cat.
+                </p>
+                <br>
+                <h3> Breeding </h3>
+                <p>
+                    During breeding season, from January through March in the northern hemisphere, red pandas form small groups and socialize more often.  Red Pandas have a very narrow fertility window, only lasting a couple of days per year at most.  Females create nests lined with moss and other soft plants, where they will have their cubs.  The mother raises the cubs for about 90 days, while the male takes little to no interest.
+                </p>
+
+            </a>
+            <a class = box id = tri>
+                <h2>
+                    Trivia
+                </h2>
+                <ul>
+                    <li>
+                        <h3> Family Drama </h3>
+                        <p>
+                            The Red Panda’s scientific classification has changed several times, starting as a member of the <em>Procyonidae</em> (Raccoon) family, before being reclassified as a member of the <em>Ursidae</em> (Bear) family, and finally being reclassified as its own unique family <em>Ailuridae</em>.
+                        </p>
+                    </li>
+                    <li>
+                        <h3> The OG </h3>
+                        <p>
+                            Red Pandas were discovered many years before their more well-known Giant namesake.  Because they shared a similar appearance, habitat, and diet, the Giant panda was given its name when it was discovered.
+                        </p>
+                    </li>
+                    <li>
+                        <h3> Global History </h3>
+                        <p>
+                            Despite their modern habitat, fossils of Red Pandas as old as 5 million years have been discovered in North America! <sup></sup>
+                        </p>
+                    </li>
+                </ul>
+            </a>
+            <div class = player>
+                <iframe src="https://www.youtube.com/embed/7VlS4Z-SJNQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <a class = box id = con>
+                <img alt="" src = "assets/media/map.PNG">
+                <img alt="" src = "assets/media/graph.png">
+                <h2>
+                    Conservation
+                </h2>
+                <p>
+                    The Red Panda is classified as an Endangered Species, with the population in the wild decreasing.  Wild red pandas face threats such as being caught in animal traps or hunted for their colorful pelts.   Their forest habitat is threatened by both human development and natural disasters such as forest fires.
+                    <br><br>
+                    Current conservation efforts include generating awareness and education in areas near potential red panda habitats to reduce human impact, enforcing fines on those buying, selling, or hunting for red pandas, initiatives to prevent deforestation in the area , and breeding programs in captivity.
+                </p>
+            </a>
+        </div>
+        <div id = workscited>
+            <h1>
+                Works Cited
+            </h1>
+            <ol>
+            <li class = citation>C. (n.d.). Red Panda in Trees [Photograph found in Pixabay]. Retrieved from <a href ='https://pixabay.com/photos/panda-brown-panda-red-panda-3235912/'> https://pixabay.com/photos/panda-brown-panda-red-panda-3235912/ </a></li>
+            <li class = citation>Estimated Red Panda population figures between 2001 and 2016 [Digital image]. (n.d.). Retrieved from <a  href = 'http://www.projectarkfoundation.com/animal/red_panda'>http://www.projectarkfoundation.com/animal/red_panda</a></li>
+            <li class = citation>Glatston, A., Wei, F., Than Zaw (IUCN SSC Cat SG / Wildlife Conservation Society (WCS), M., &amp; Sherpa, A. (2015, April 11). The IUCN Red list of threatened species. Retrieved May 09, 2021, from <a href = 'https://www.iucnredlist.org/species/714/110023718'>https://www.iucnredlist.org/species/714/110023718</a></li>
+            <li class = citation>Kobayashi, M. (n.d.). Group of Red Pandas [Photograph found in Pixabay]. Retrieved from <a  href = 'https://pixabay.com/photos/red-panda-bear-animal-fur-family-5497103/'>https://pixabay.com/photos/red-panda-bear-animal-fur-family-5497103/</a></li>
+            <li class = citation>Red Panda Eating Leaf [Photograph found in Pixabay]. (n.d.). In 1365350083 998620830 A. (Author). Retrieved May 9, 2021, from <a  href = 'https://pixabay.com/photos/panda-red-panda-bear-cat-3503779/'>https://pixabay.com/photos/panda-red-panda-bear-cat-3503779/</a></li>
+            <li class = citation>Red panda. (2020, October 27). Retrieved May 7, 2021, from <a  href = 'https://nationalzoo.si.edu/animals/red-panda'>https://nationalzoo.si.edu/animals/red-panda</a></li>
+            <li class = citation>Red panda. (n.d.). Retrieved May 07, 2021, from <a  href = 'https://www.worldwildlife.org/species/red-panda'>https://www.worldwildlife.org/species/red-panda</a></li>
+            <li class = citation>Red panda. (n.d.). Retrieved May 7, 2021, from <a  href = 'https://animals.sandiegozoo.org/animals/red-panda'>https://animals.sandiegozoo.org/animals/red-panda</a></li>
+            <li class = citation>Red panda: National geographic. (n.d.). Retrieved May 7, 2021, from <a  href = 'https://www.nationalgeographic.com/animals/mammals/facts/red-panda'>https://www.nationalgeographic.com/animals/mammals/facts/red-panda</a></li>
+            <li class = citation>Slideshow Images [Personal photograph taken in Rosamond Gifford Zoo]. (2021, April 3).</li>
+            <li class = citation>Sounds, A. (Producer). (2020, November 28). Red Panda sound effect and Video (4k) [Video file]. Retrieved May 7, 2021, from <a href = 'https://www.youtube.com/watch?v=7VlS4Z-SJNQ'>https://www.youtube.com/watch?v=7VlS4Z-SJNQ</a></li>
+            <li class = citation>TorontoZooChannel (Director). (2020, April 21). Red Panda Keeper Talk [Video file]. Retrieved May 7, 2021, from <a  href = 'https://www.youtube.com/watch?v=3Jcu1BXeNJ4'>https://www.youtube.com/watch?v=3Jcu1BXeNJ4</a></li>
+            </ol>
+        </div>
+        <script src ='assets/java/slides.js' ></script>
+        <script src ="assets/java/buttons.js" ></script>
+    </body>
+</html>
